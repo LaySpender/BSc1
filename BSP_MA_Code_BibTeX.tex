@@ -29,7 +29,7 @@
 
 %
 % Bitte in der folgenden Zeile den Zitierstandard festlegen
-\newcommand{\FHTWCitationType}{HARVARD} % IEEE oder HARVARD möglich - wenn Sie zwischen IEEE und HARVARD wechseln, bitte die temorären Dateien (aux, bbl, ...) löschen
+\newcommand{\FHTWCitationType}{IEEE} % IEEE oder HARVARD möglich - wenn Sie zwischen IEEE und HARVARD wechseln, bitte die temorären Dateien (aux, bbl, ...) löschen
 %
 \ifthenelse{\equal{\FHTWCitationType}{HARVARD}}{\usepackage{harvard}}{\usepackage{bibgerm}}
 
@@ -135,19 +135,19 @@
 \maketitle
 % .. und hier beginnt die eigentliche Arbeit. Viel Erfolg beim Verfassen!
 \chapter{Introduction}
-% allgemeine Einführung in Thema, Forschungsfragen die man mittels dieser Arbeit beantworten will
+% Motivation (warum arbeitet man überhaupt daran?, allgemeine Einführung in Themengebiete (Einstieg soll sich auf Wissen der Zielgruppe beschränken), State of the art zeigen (Nennung von bereits laufenden bzw. abgeschlossenen Forschungen), Forschungsfragen die man mittels dieser Arbeit beantworten will (hier beginnt roter Faden der Arbeit!), Überblick über die folgenden Kapitel
 
 \chapter{Mobile Development Approaches}
-To this day lots of companies if not all recognized that using mobile applications on smartphones or other mobile devices is crucial to have a chance against the competition \cite{7479278}. If a company chooses to offer a mobile application for their customers they do not want to offer the mobile application for only half of their customers. However to reach all customers a company has to develop their mobile application for multiple platforms. Nevertheless without precisely planning the development and maintenance of multiple mobile applications for multiple platforms the company can lose more than it gets \cite{JohanssonSderberg2018}, \cite{Steczko2016}. This is one of the reasons why choosing the correct mobile development approach is essential for success. To assist in finding the most valuable approach for a project the following points describe the strengths and weaknesses of the most used mobile development approaches. 
+To this day lots of companies if not all recognized that using mobile applications on smartphones or other mobile devices is crucial to have a chance against the competition \cite[p.~1]{7479278}. If a company chooses to offer a mobile application for their customers they do not want to offer the mobile application for only half of their customers. However to reach all customers a company has to develop their mobile application for multiple platforms. Nevertheless without precisely planning the development and maintenance of multiple mobile applications for multiple platforms the company can invest more money into the development than possibly needed \cite[p.~1]{JohanssonSderberg2018} \cite[p.~5,~8]{Steczko2016} \cite[p.~757]{Ciman2014}. This is one of the reasons why choosing the correct mobile development approach is essential for success. To assist in finding the most valuable approach for a project the following points summarize the most used mobile development approaches. 
 
 \section{Native Approach}
-
+Choosing the native development approach implicates developing the same application for each platform the application should be available on. The supported platforms are lots of the time the most commonly used operating systems for mobile devices on the market which to this day are Android (insert company) and iOS (insert company) \cite[p.~5]{Steczko2016}. As a result, two applications have to be developed one for Android by using Java as the programming language and the Android-SDK, and one for iOS by using Swift as the programming language and the iOS-SDK \cite[p.~5]{LinckArne2016} \cite{AppleGettingStarted}. Even though this leads to the requirement of different skill sets and therefore potentially more developers being necessary for the development of the application, it also leads to applications developed by utilizing the official platform specific frameworks and tools recommended by the publishers of the platforms. Through using platform specific frameworks and tools a developer is able to directly communicate with the operating system of the mobile device to get access to features like sensors or cloud services without having to rely on other alternatives most of the cross-platform approaches have to use to communicate with the operating system and get access to the above mentioned features \cite[p.~6]{LinckArne2016}. performance is pretty good. On the contrary two different code bases have to be maintained which further results in more time needed for maintenance or possibly like in the development of the application for each platform developers are necessary.  only one platform with the tools and framework the platform supports \cite[p.~5]{LinckArne2016}, platform specific frameworks support the use of features like sensors or cloud services that are unique for each platform \cite[p.~6]{LinckArne2016}, running directly on the operating system \cite[p.~6]{LinckArne2016},
 
 \section{Cross-Platform Approaches}
-One of the goals Cross-Platform Approaches try to achieve is only having to develop and maintain one code basis for all different platforms \cite{7479278}. While there are multiple solutions each approach has their own strengths and weaknesses depending on the situation therefor none is the best for every possible scenario \cite{JohanssonSderberg2018}. 
+One of the goals cross-platform approaches try to achieve is only having to develop and maintain one code basis for all different platforms \cite[p.~1]{7479278}. While there are multiple solutions each approach has their own strengths and weaknesses depending on the situation therefor none is the best for every possible scenario \cite{JohanssonSderberg2018}. The following chapters describe for each approach how the given approach solves the cross-platform problem, which frameworks or technologies support the given approach and what strengths and weaknesses the given approach has.
 
 \subsection{Web Approach}
-based on browsers for mobile devices \cite{7934674}, compliance of different browser manufacturers with the HTML standard of the W3C \cite{https://doi.org/10.25673/6251}, uses HTML, CSS, and JavaScript to implement \cite{7934674}, browser as runtime environment \cite{7934674}, Solutions: Jquery mobile, Sencha touch, and Boostrap \cite{7934674}
+based on browsers for mobile devices \cite{7934674}, compliance of different browser manufacturers with the HTML standard of the W3C \cite{JohanssonSderberg2018}, uses HTML, CSS, and JavaScript to implement \cite{7934674}, browser as runtime environment \cite{7934674}, Solutions: Jquery mobile, Sencha touch, and Boostrap \cite{7934674}
 
 \subsection{Hybrid Approach}
 
