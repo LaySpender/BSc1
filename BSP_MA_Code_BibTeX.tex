@@ -63,6 +63,7 @@
 
 % Die nachfolgenden Pakete stellen sonst nicht benötigte Features zur Verfügung
 \usepackage{blindtext}
+\usepackage{parskip}
 
 %
 % Einträge für Deckblatt, Kurzfassung, etc.
@@ -138,20 +139,22 @@
 % Motivation (warum arbeitet man überhaupt daran?, allgemeine Einführung in Themengebiete (Einstieg soll sich auf Wissen der Zielgruppe beschränken), State of the art zeigen (Nennung von bereits laufenden bzw. abgeschlossenen Forschungen), Forschungsfragen die man mittels dieser Arbeit beantworten will (hier beginnt roter Faden der Arbeit!), Überblick über die folgenden Kapitel
 
 \chapter{Mobile Development Approaches}
-To this day lots of companies if not all recognized that using mobile applications on smartphones or other mobile devices is crucial to have a chance against the competition \cite[p.~1]{7479278}. If a company chooses to offer a mobile application for their customers they do not want to offer the mobile application for only half of their customers. However to reach all customers a company has to develop their mobile application for multiple platforms. \newline
-\newline
+To this day lots of companies if not all recognized that using mobile applications on smartphones or other mobile devices is crucial to have a chance against the competition \cite[p.~1]{7479278}. If a company chooses to offer a mobile application for their customers they do not want to offer the mobile application for only half of their customers. However to reach all customers a company has to develop their mobile application for multiple platforms. 
+\\[\baselineskip]
 Nevertheless without precisely planning the development and maintenance of multiple mobile applications for multiple platforms the company can invest more money into the development than possibly needed \cite[p.~1]{JohanssonSderberg2018} \cite[p.~5,~8]{Steczko2016} \cite[p.~757]{Ciman2014}. This is one of the reasons why choosing the correct mobile development approach is essential for success. To assist in finding the most valuable approach for a project the following points summarize the most used mobile development approaches. 
 
 \section{Native Approach}
-Choosing the native development approach implicates developing the same application for each platform the application should be available on. The supported platforms are lots of the time the most commonly used operating systems for mobile devices on the market which to this day are Android (insert company) and iOS (insert company) \cite[p.~5]{Steczko2016}. As a result, two applications have to be developed one for Android by using Java as the programming language and the Android-SDK, and one for iOS by using Swift as the programming language and the iOS-SDK \cite[p.~5]{LinckArne2016} \cite{AppleGettingStarted}. Even though this leads to the requirement of different skill sets and therefore potentially more developers being necessary for the development of the application, it also leads to applications developed by utilizing the official platform specific frameworks and tools recommended by the publishers of the platforms. Through using platform specific frameworks and tools a developer is able to directly communicate with the operating system of the mobile device to get access to features like sensors or cloud services without having to rely on other alternatives cross-platform applications have to use to communicate with the operating system and get access to the above mentioned features \cite[p.~6]{LinckArne2016}. These alternatives are as follows: using an interpreter to call native APIs at runtime, utilizing a cross-compiler to compile non-native code into a native application, developing a web application and displaying it via the browser of the mobile device, using a webview-component for a web application or using Model driven architecture defined by the Object Management Group to create models that will later on be transformed into native source code \cite[p.~4--6]{Hansson_Vidhall_2016} \cite[p.~3--5]{LinckArne2016}. Every alternative besides the ones that transform non-native code to native applications or native source code suffer from performance issues in comparison with native applications \cite[p.~2,~10]{JohanssonSderberg2018} \cite[p.~6]{LinckArne2016}.\newline
-\newline
+Choosing the native development approach implicates developing the same application for each platform the application should be available on. The supported platforms are lots of the time the most commonly used operating systems for mobile devices on the market which to this day are Android (insert company) and iOS (insert company) \cite[p.~5]{Steczko2016}. As a result, two applications have to be developed one for Android by using Java as the programming language and the Android-SDK, and one for iOS by using Swift as the programming language and the iOS-SDK \cite[p.~5]{LinckArne2016} \cite{AppleGettingStarted}. Even though this leads to the requirement of different skill sets and therefore potentially more developers being necessary for the development of the application, it also leads to applications developed by utilizing the official platform specific frameworks and tools recommended by the publishers of the platforms. 
+\\[\baselineskip]
+Through using platform specific frameworks and tools a developer is able to directly communicate with the operating system of the mobile device to get access to features like sensors or cloud services without having to rely on other alternatives cross-platform applications have to use to communicate with the operating system and get access to the above mentioned features \cite[p.~6]{LinckArne2016}. These alternatives are as follows: using an interpreter to call native APIs at runtime, utilizing a cross-compiler to compile non-native code into a native application, developing a web application and displaying it via the browser of the mobile device, using a webview-component for a web application or using Model driven architecture defined by the Object Management Group to create models that will later on be transformed into native source code \cite[p.~4--6]{Hansson_Vidhall_2016} \cite[p.~3--5]{LinckArne2016}. Every alternative besides the ones that transform non-native code to native applications or native source code before runtime suffer from performance issues in comparison with native applications \cite[p.~2,~10]{JohanssonSderberg2018} \cite[p.~6]{LinckArne2016} \cite[p.~111]{Keist2016}. 
+\\[\baselineskip]
 On the contrary each application has a different code base thus each code base has to be maintained. This either means that one developer with knowledge of developing on all platforms needs to work on maintenance for all applications or like in the development of the applications a developer with special knowledge regarding one platform works on the maintenance of this particular platform's application \cite[p.~6]{LinckArne2016}.
 
 \section{Cross-Platform Approaches}
-The major goal cross-platform approaches try to achieve is only having to develop and maintain one code basis for all different platforms. Other important goals are to access all platform dependent features, remain the same performance and look and feel a native application has \cite[p.~1]{7479278} \cite[p.~1]{7934674}. While there are multiple solutions each approach has their own strengths and weaknesses depending on the situation therefor none is the best for every possible scenario \cite{JohanssonSderberg2018}. The following chapters describe for each approach how the given approach solves the cross-platform problem, which frameworks or technologies make use of the given approach and what strengths and weaknesses the given approach has.
+The major goal cross-platform approaches try to achieve is only having to develop and maintain one code base for all different platforms. Other important goals are accessing all platform dependent features, remaining the same performance and look and feel a native application has \cite[p.~1]{7479278} \cite[p.~1]{7934674}. While there are multiple solutions each approach has their own strengths and weaknesses depending on the situation therefor none is the best for every possible scenario \cite[p.~110]{Keist2016}. The following chapters describe for each approach how the given approach solves the cross-platform problem, what strengths and weaknesses the given approach has and which frameworks or technologies make use of the given approach.
 
 \subsection{Web Approach}
-based on browsers for mobile devices \cite{7934674}, compliance of different browser manufacturers with the HTML standard of the W3C \cite{JohanssonSderberg2018}, uses HTML, CSS, and JavaScript to implement \cite{7934674}, browser as runtime environment \cite{7934674}, Solutions: Jquery mobile, Sencha touch, and Boostrap \cite{7934674}
+based on browsers for mobile devices \cite[p.~2]{7934674}, compliance of different browser manufacturers with the HTML standard of the W3C \cite[p.~2]{LinckArne2016}, uses HTML, CSS, and JavaScript to implement \cite[p.~2]{7934674}, browser as runtime environment \cite{7934674}, Solutions: Jquery mobile, Sencha touch, and Boostrap \cite{7934674}
 
 \subsection{Hybrid Approach}
 
@@ -168,36 +171,54 @@ Xamarin, Flutter,
 % write as an introduction why react native and xamarin 
 
 \section{React Native}
-\cite{Hansson_Vidhall_2016} \cite{Danielsson_2016}
+\cite{Hansson_Vidhall_2016} \cite{Danielsson_2016} \cite[p.~21-32]{ZubaBernhard2017EdPb}
 
 \section{Xamarin}
-
+\cite[p.~14-20]{ZubaBernhard2017EdPb}
 
 \chapter{Evaluation}
 % the introduction of this chapter should include why these criteria were chosen
+\cite[p.~24]{Danielsson_2016}
 
 \section{Criteria}
+% introduction of this chapter should give a little start on each criteria and say that each criteria describes the evaluation of the study like in \cite[p.~25]{Danielsson_2016}
 
 \subsection{Performance}
+\cite[p.~25-26]{Danielsson_2016} \cite[p.~30]{Axelsson2016} \cite[p.~29-31]{Hansson_Vidhall_2016}
 
 \subsection{Code Sharing}
+\cite[p.~31]{Hansson_Vidhall_2016}
 
 \subsection{Documentation and Community}
 
+
 \subsection{Look and Feel}
+\cite[p.~18]{GaouarBenamarBendimerad2016}, react native \cite[p.~25]{Danielsson_2016} \cite[p.~31]{Hansson_Vidhall_2016}
+
 
 \section{Results}
+% introduction should describe what will be compared in the following chapters and that there are studies that only used one framework, so it is more a summary of results plus a little discussion
 
 \subsection{Performance}
+xamarin, react native \cite[p.~30-32]{ZubaBernhard2017EdPb}, xamarin \cite{WillocxVossaertNaessens2015}, react native \cite[p.~67-68]{Axelsson2016} \cite[p.~34-43]{Hansson_Vidhall_2016}
 
 \subsection{Code Sharing}
+xamarin, react native \cite[p.~71-72]{ZubaBernhard2017EdPb}, react native (results\cite[p.~44]{Hansson_Vidhall_2016}) (discussion\cite[p.~53]{Hansson_Vidhall_2016})
 
 \subsection{Documentation and Community}
+react native, xamarin lots of papers say it is quite good but has some weaknesses and then show what they could not really find but overall there are few studies that provide scientifically accurate results that could be showcased and discussed.
 
 \subsection{Look and Feel}
+xamarin \cite[p.~21]{GaouarBenamarBendimerad2016}, react native (results\cite[p.~29-31]{Danielsson_2016}) (discussion\cite[p.~45]{Danielsson_2016}) (results\cite[p.~44]{Hansson_Vidhall_2016}) (discussion\cite[p.~53-55]{Hansson_Vidhall_2016})
 
 
 \chapter{Conclusion \& Future Work}
+
+
+
+
+
+
 
 
 % Hier beginnen die Verzeichnisse.
@@ -218,9 +239,9 @@ Xamarin, Flutter,
 \addcontentsline{toc}{chapter}{\listacroname}
 \chapter*{\listacroname}
 \begin{acronym}[XXXXX]
-    \acro{ABC}[ABC]{Alphabet}
-    \acro{WWW}[WWW]{world wide web}
-    \acro{ROFL}[ROFL]{Rolling on floor laughing}
+    \acro{iOS}[iOS]{iPhone Operating System}
+    \acro{SDK}[SDK]{Software Development Kit}
+    \acro{W3C}[W3c]{World Wide Web Consortium}
 \end{acronym}
 
 \end{document}
