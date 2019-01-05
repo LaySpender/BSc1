@@ -164,7 +164,7 @@ React Native
 \subsection{Cross-compiled Approach}
 Xamarin, Flutter,
 
-\subsection{MDA Approach}
+\subsection{Model Driven Approach}
 
 
 \chapter{Selected Frameworks}
@@ -176,12 +176,13 @@ Xamarin, Flutter,
 \section{Xamarin}
 \cite[p.~14-20]{ZubaBernhard2017EdPb}
 
+
 \chapter{Evaluation}
 % the introduction of this chapter should include why these criteria were chosen
 \cite[p.~24]{Danielsson_2016}
 
 \section{Criteria}
-% introduction of this chapter should give a little start on each criteria and say that each criteria describes the evaluation of the study like in \cite[p.~25]{Danielsson_2016}
+% introduction of this chapter should give a little start on each criteria and say that each criteria describes the evaluation of the study like in \cite[p.~24]{Danielsson_2016}
 
 \subsection{Performance}
 \cite[p.~25-26]{Danielsson_2016} \cite[p.~30]{Axelsson2016} \cite[p.~29-31]{Hansson_Vidhall_2016}
@@ -189,24 +190,31 @@ Xamarin, Flutter,
 \subsection{Code Sharing}
 \cite[p.~31]{Hansson_Vidhall_2016}
 
-\subsection{Documentation and Community}
-
+\subsection{Documentation}
+The purpose of this criteria was to get an idea how difficult it is to start developing or develop cross-platform applications with Xamarin or React Native. However while researching into studies on Xamarin and/or React Native regarding how good or bad the official documentation is, little to no studies were found. The only time authors wrote about the documentation was when they experimented with developing a cross-platform application with either React Native, Xamarin or both. The information contained therein consists mostly of explanations of how the documentation has helped them to solve problems or which information was missing in the official documentation. Some examples of this theses and papers are as follows: developing a React Native application \cite[p.~16-18]{Danielsson_2016}, developing a geolocation and a bluetooth feature, a shared library and creating native bindings for a Xamarin cross-platform application \cite[p.~10-15]{Dickson_2013} and porting a HTML5 web application to a React Native cross-platform application and a Xamarin cross-platform application \cite[p.~33-69]{ZubaBernhard2017EdPb}. Considering this led to changing the purpose of this criteria from comparing the documentation of Xamarin and React Native with each other and finding out if the documentation of Xamarin or React Native lacks in some form or another to summarizing experiences developers of React Native and Xamarin cross-platform applications had with using the official documentation of either Xamarin or React Native. 
 
 \subsection{Look and Feel}
 \cite[p.~18]{GaouarBenamarBendimerad2016}, react native \cite[p.~25]{Danielsson_2016} \cite[p.~31]{Hansson_Vidhall_2016}
 
 
 \section{Results}
-% introduction should describe what will be compared in the following chapters and that there are studies that only used one framework, so it is more a summary of results plus a little discussion
+The following chapters showcase and discuss results of studies and experiments regarding the two cross platform mobile development frameworks Xamarin and React Native. When possible studies were chosen which underwent experiments with both frameworks. However lots of other noteworthy studies which only underwent experiments with one of the two frameworks are also featured. In this case the results are not comparable nevertheless they still showcase results regarding the above mentioned criteria and further help to get a better picture in regard to both frameworks. The studies that did use both frameworks also feature a comparison of their results.
 
 \subsection{Performance}
 xamarin, react native \cite[p.~30-32]{ZubaBernhard2017EdPb}, xamarin \cite{WillocxVossaertNaessens2015}, react native \cite[p.~67-68]{Axelsson2016} \cite[p.~34-43]{Hansson_Vidhall_2016}
 
 \subsection{Code Sharing}
-xamarin, react native \cite[p.~71-72]{ZubaBernhard2017EdPb}, react native (results\cite[p.~44]{Hansson_Vidhall_2016}) (discussion\cite[p.~53]{Hansson_Vidhall_2016})
+xamarin, react native \cite[p.~71-72]{ZubaBernhard2017EdPb}, xamarin \cite[p.~185]{MartinezLecomte2017}, react native (results\cite[p.~44]{Hansson_Vidhall_2016}) (discussion\cite[p.~53]{Hansson_Vidhall_2016}),
 
-\subsection{Documentation and Community}
-react native, xamarin lots of papers say it is quite good but has some weaknesses and then show what they could not really find but overall there are few studies that provide scientifically accurate results that could be showcased and discussed.
+\subsection{Documentation}
+The official documentations of Xamarin and React Native are not the only ways to get detailed information regarding the specific framework. Most developers also use StackOverflow as a source for explanations and code examples. Also when searching for solutions or information regarding a problem with the native code Xamarin and React Native developers can take a look in the official documentations of Android and iOS \cite[p.~11]{Dickson_2013}. Furthermore React Native developers do not only have React Native's documentation but also React's documentation.
+xamarin,
+The following list includes the experiences authors of theses, studies or papers had with the official documentation of React Native \cite{ReactNativeDoc} while developing cross-platform applications with React Native: 
+\begin{itemize}
+\item Setting up the development environment for Android and iOS regarding the operating system used on the computer of the developer, connecting to a physical mobile device, setting up a virtual mobile device and creating a new project lead to no problems for William Danielsson when following the steps of the documentations chapter "Getting Started" \cite[p.~18]{Danielsson_2016}.
+\item \cite[p.~23-24]{Danielsson_2016}.
+\item Figuring out how routing and navigating works in an application developed with React Native led to problems when only reading the documentation. William Danielsson solved this problem by reading this blog \cite{ReactNativeBlog} \cite[p.~51]{Danielsson_2016}.
+\end{itemize}
 
 \subsection{Look and Feel}
 xamarin \cite[p.~21]{GaouarBenamarBendimerad2016}, react native (results\cite[p.~29-31]{Danielsson_2016}) (discussion\cite[p.~45]{Danielsson_2016}) (results\cite[p.~44]{Hansson_Vidhall_2016}) (discussion\cite[p.~53-55]{Hansson_Vidhall_2016})
