@@ -137,6 +137,21 @@
 % .. und hier beginnt die eigentliche Arbeit. Viel Erfolg beim Verfassen!
 \chapter{Introduction}
 % Motivation (warum arbeitet man überhaupt daran?, allgemeine Einführung in Themengebiete (Einstieg soll sich auf Wissen der Zielgruppe beschränken), State of the art zeigen (Nennung von bereits laufenden bzw. abgeschlossenen Forschungen), Forschungsfragen die man mittels dieser Arbeit beantworten will (hier beginnt roter Faden der Arbeit!), Überblick über die folgenden Kapitel
+Motivation how mobile devices became more and more and how much there are right now; 
+\\[\baselineskip]
+general introduction regarding mobile development and cross platform; 
+\\[\baselineskip]
+Lots of studies on cross platform mobile development were already performed. Latif, Lakhrissi, Nfaoui and Es-Sbai published a paper \cite{7479278} in which they summarized all mobile cross platform development approaches and compared them with each other. As a result of their analysis they identified multiple desirable requirements of any cross platform technology. These requirements are: application scalability and maintainability, access to features of device, auto-optimization of resource consumption, security and a development environment that features intelligent auto-completion systems, debuggers, compilers and simulators for all supported platforms. Another paper \cite{7934674} published by the same authors also touches upon mobile cross platform development approaches but concentrates on comparing frameworks that use these approaches. In the following chapters of this thesis all mobile development approaches will further be explained and the benefits along with the disadvantages of each will be listed.
+\\[\baselineskip]
+React Native By implementing a React Native feature set and analyzing it through performance parameters \cite{JohanssonSderberg2018}, comparing applications developed in Xamarin and PhoneGap (firma!) with each other and native applications created in Android and iOS \cite{Armgren_2015}. In this thesis various noteworthy results of papers, studies and theses \cite{Danielsson_2016} \cite{Axelsson2016} \cite{Hansson_Vidhall_2016} \cite{MartinezLecomte2018} \cite{ZubaBernhard2017EdPb} \cite{WillocxVossaertNaessens2015} \cite{MartinezLecomte2017} \cite{Dickson_2013} \cite{MartinezLecomte2018} \cite{GaouarBenamarBendimerad2016} that either experiment with Xamarin or React Native or both will be summarized and their results presented. Besides performance this thesis will also include other criteria like code sharing, documentation and look and feel. If possible the results will contain a discussion comparing Xamarin and React Native with each other. 
+\\[\baselineskip]
+The following are the research questions to be dealt with in this thesis:
+\begin{itemize}
+\item Does an application developed in Xamarin perform as well as one developed in React Native and which performs better compared to a native application created in Android or iOS?
+\item How much code of an application written using Xamarin or React Native can be shared between Android and iOS?
+\item Do the documentations of Xamarin and React Native lack information needed to develop features?
+\item Will the look and feel of a native application created in Android or iOS stay the same when developed in Xamarin or React Native?
+\end{itemize}
 
 \chapter{Mobile Development Approaches}
 To this day lots of companies if not all recognized that offering mobile applications on smartphones or other mobile devices to their customers is crucial to have a chance against the competition \cite[p.~1]{7479278}. If a company chooses to provide a mobile application for their customers they do not want to offer the mobile application to only half of their customers. However to reach all customers a company has to develop their mobile application for multiple platforms \cite[p.~5]{Steczko2016}.
@@ -168,16 +183,16 @@ React Native \cite[p.~3]{JohanssonSderberg2018}
 \cite{7479278}, \cite{7934674} Xamarin, Flutter,
 
 \subsection{Model Driven Approach}
-\cite{7479278}, \cite{7934674}
+\cite{7479278}, \cite{7934674} picture how model transformation works
 
 \chapter{Selected Frameworks}
 % write as an introduction why react native and xamarin 
 
 \section{React Native}
-\cite{Hansson_Vidhall_2016} \cite{Danielsson_2016} \cite[p.~21-32]{ZubaBernhard2017EdPb}
+\cite{Hansson_Vidhall_2016} \cite{Danielsson_2016} \cite[p.~21-32]{ZubaBernhard2017EdPb} picture how native bridge works
 
 \section{Xamarin}
-\cite[p.~14-20]{ZubaBernhard2017EdPb}
+\cite[p.~14-20]{ZubaBernhard2017EdPb} picture how cross compiler works
 
 
 \chapter{Evaluation}
@@ -206,7 +221,7 @@ Considering this led to changing the purpose of this criteria from comparing the
 The following chapters showcase and discuss results of studies and experiments regarding the two cross platform mobile development frameworks Xamarin and React Native. When possible studies were chosen which underwent experiments with both frameworks. However lots of other noteworthy studies which only underwent experiments with one of the two frameworks are also featured. In this case the results are not comparable nevertheless not including them would mean ignoring interesting data on the above mentioned criteria. By incorporating these studies, one gains a better picture of Xamarin and React Native regarding performance, code sharing, documentation and look and feel. The studies, which used both frameworks for their experiments, also provided comparisons and discussions of the results. These comparisons and discussions are also summarized in the following chapters.
 
 \subsection{Performance}
-xamarin, react native \cite[p.~30-32]{ZubaBernhard2017EdPb}, xamarin \cite{WillocxVossaertNaessens2015}, react native \cite[p.~67-68]{Axelsson2016} \cite[p.~34-43]{Hansson_Vidhall_2016}
+xamarin, react native \cite[p.~30-32]{ZubaBernhard2017EdPb}, xamarin \cite{Armgren_2015} \cite{WillocxVossaertNaessens2015}, react native \cite[p.~67-68]{Axelsson2016} \cite[p.~34-43]{Hansson_Vidhall_2016}
 \subsection{Code Sharing}
 xamarin, react native \cite[p.~71-72]{ZubaBernhard2017EdPb}, xamarin \cite[p.~185]{MartinezLecomte2017}, react native (results\cite[p.~44]{Hansson_Vidhall_2016}) (discussion\cite[p.~53]{Hansson_Vidhall_2016}),
 
@@ -257,7 +272,7 @@ xamarin \cite[p.~21]{GaouarBenamarBendimerad2016}, react native (results\cite[p.
     \acro{iOS}[iOS]{iPhone Operating System}
     \acro{SDK}[SDK]{Software Development Kit}
     \acro{W3C}[W3C]{World Wide Web Consortium}
-    \acro{Q\&A}[Q\&A]{Questions and Answers}
+    \acro{QnA}[Q\&A]{Questions and Answers}
 \end{acronym}
 
 \end{document}
