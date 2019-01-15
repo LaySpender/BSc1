@@ -225,11 +225,19 @@ Though selecting exactly two frameworks does not completely eliminate the possib
 The biggest reasons for selecting Xamarin and React Native were that both support Android and iOS \cite[p.~1]{JohanssonSderberg2018} \cite[p.~12]{ZubaBernhard2017EdPb}, that both still get new features, bug fixes and improvements \cite{XamarinRoadmap} \cite{ReactNativeRoadmap} and a good amount of valuable studies were available to work with (e.g. \cite{Hansson_Vidhall_2016}, \cite{MartinezLecomte2018}, \cite{GaouarBenamarBendimerad2016}).
 
 \section{Xamarin}
-\cite[p.~14-20]{ZubaBernhard2017EdPb} \cite[p.~8-10]{Dickson_2013}
+With the idea of developing a cross-platform framework that allows writing an application that runs on iOS, Android, Windows and MacOS, the company Xamarin was founded in May 2011. The resulting framework called Xamarin offers the possibility to create a project in which C\# can be used as a programming language to develop a cross-platform application. If hardware features are required that cannot be implemented through the common code, platform specific C\# code can be written into the project of the respective platform in order to be able to implement the feature for this platform. Xamarin was bought by Microsoft in 2016 and is therefore included with every version of Visual Studio \cite[p.~14]{ZubaBernhard2017EdPb} \cite[p.~16]{LinckArne2016}.
+\\[\baselineskip]
+The basis of Xamarin is the Mono framework, which is an open source implementation of the C\# compiler and the Microsoft .NET framework. In this case, the source code is compiled in bytecode (intermediate language) and then executed by the common language runtime (CLR), also called Mono runtime. In addition, the Mono runtime provides access to an ECMA common language infrastructure (CLI), a just-in-time compiler (JIT) and an ahead-of-time compiler (AOT) \cite[p.~14]{ZubaBernhard2017EdPb}.
+\\[\baselineskip]
+In order to be able to run the application developed with Xamarin on a mobile device that uses Android, the application must be compiled in bytecode (intermediate language). This is then packed together with the Mono runtime and installed on the device. If the application is now executed the Android runtime (ART) and the Mono runtime run simultaneously. During execution, the Mono Runtime uses its just-in-time compiler to compile the intermediate language to a native assembly. An exchange between the two runtimes is necessary if native functionalities or Java libraries need to be called. The communication between the two runtimes is handled by the Java Native Interface \cite[p.~14-15]{ZubaBernhard2017EdPb} \cite[p.~456]{WillocxVossaertNaessens2015}. Since iOS does not allow generation of code at runtime, the mono-framework's ahead-of-time compiler is used to translate the application's C\# code into native ARM assembler code. This will allow the application to run on iOS\cite[p.~15]{ZubaBernhard2017EdPb} \cite[p.~456]{WillocxVossaertNaessens2015}.
+\\[\baselineskip]
+When generating a Xamarin project, you can specify whether the project should be created as a Portable Class Library (PCL) or Shared Asset Project (SAP). Both choices allow you to share the common code. The difference is that with PCL, the shared code is packaged into a dynamically-referenced library and then integrated into the various platforms at the runtime of the application. However, with SAP, the common code is already included in the respective projects when the application is built. According to Microsoft, developers should use PCL \cite[p.~16]{ZubaBernhard2017EdPb} \cite[p.~8-9]{Dickson_2013}.
+\\[\baselineskip] 
+Xamarin Forms \cite[p.~17]{ZubaBernhard2017EdPb}
 
 \section{React Native}
 \cite{Hansson_Vidhall_2016} \cite{Danielsson_2016} \cite[p.~21-32]{ZubaBernhard2017EdPb}
-\cite[p.~14-20]{ZubaBernhard2017EdPb} picture how cross compiler works
+\cite[p.~14-20]{ZubaBernhard2017EdPb}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.75\linewidth]{PICs/Bachelor1_NativeBridge.png}
