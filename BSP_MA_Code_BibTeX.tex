@@ -233,7 +233,7 @@ In order to be able to run the application developed with Xamarin on a mobile de
 \\[\baselineskip]
 When generating a Xamarin project, you can specify whether the project should be created as a Portable Class Library (PCL) or Shared Asset Project (SAP). Both choices allow you to share the common code. The difference is that with PCL, the shared code is packaged into a dynamically-referenced library and then integrated into the various platforms at the runtime of the application. However, with SAP, the common code is already included in the respective projects when the application is built. According to Microsoft, developers should use PCL \cite[p.~16]{ZubaBernhard2017EdPb} \cite[p.~8-9]{Dickson_2013}.
 \\[\baselineskip] 
-Xamarin Forms \cite[p.~17]{ZubaBernhard2017EdPb}
+In order to support platform-independent user interfaces with Xamarin, Xamarin.Forms was invented in 2014. When Xamarin.Forms is used, one or more XAML (extensible application markup language) files must be created in which the user interface controls can be defined. During compilation, each XAML file is translated into a BAML (binary application markup language) file, which provides the basis for reusing the user interface across multiple platforms. In addition, each defined user interface control is mapped to the respective native counterpart. However, as a result only those user interface controls can be defined that are also available on all platforms \cite[p.~17-18]{ZubaBernhard2017EdPb}.
 
 \section{React Native}
 \cite{Hansson_Vidhall_2016} \cite{Danielsson_2016} \cite[p.~21-32]{ZubaBernhard2017EdPb}
