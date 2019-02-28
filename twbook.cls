@@ -227,7 +227,7 @@ urlcolor=TWblue, urlbordercolor=white}
   \ifstr{\doctypeprint}{MASTERTHESIS}{%
     \renewcommand*{\doctypeprint}{MASTER THESIS}}{}
   \ifstr{\doctypeprint}{BACHELORTHESIS}{%
-    \renewcommand*{\doctypeprint}{BACHELOR PAPER}}{}
+    \renewcommand*{\doctypeprint}{SEMINAR PAPER}}{}
 
 \ifstr{\sprache}{german}{%
 \ifstr{\degreecourse}{TW}{\renewcommand*{\cover}{PICs/TW}}{}
